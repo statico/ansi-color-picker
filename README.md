@@ -2,6 +2,8 @@
 
 An interactive web-based tool for finding the closest ANSI 256 terminal colors to any color you select.
 
+**[Try the live demo →](https://statico.github.io/ansi-color-picker/)**
+
 ## Features
 
 - **Visual HSV color picker** with intuitive saturation/value square and hue slider
