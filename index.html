@@ -118,7 +118,7 @@
     
     // Add standard 16 at the beginning
     return [...standard16.map((rgb, i) => ({ index: i, rgb })), 
-            ...colors.slice(16).map((rgb, i) => ({ index: i + 16, rgb }))];
+            ...colors.map((rgb, i) => ({ index: i + 16, rgb }))];
   }, []);
 
   // Convert HSV to RGB
