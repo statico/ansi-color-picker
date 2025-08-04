@@ -1,6 +1,36 @@
-import React, { useState, useMemo, useCallback, useRef, useEffect } from 'react';
-
-const AnsiHSVColorPicker = () => {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interactive ANSI 256 color picker - Find the closest terminal color for any color you select">
+  <meta name="keywords" content="ANSI, terminal, color picker, 256 colors, HSV, color tool">
+  <meta name="author" content="Ian Langworth">
+  <meta property="og:title" content="ANSI Color Picker">
+  <meta property="og:description" content="Interactive tool for finding the closest ANSI 256 terminal colors">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://statico.github.io/ansi-color-picker/">
+  <title>ANSI Color Picker - Find Terminal Colors</title>
+  
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <style>
+    /* Custom styles for better color picker experience */
+    .color-picker-cursor {
+      box-shadow: 0 0 0 2px white, 0 0 0 3px black;
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  
+  <script type="text/babel">
+    const { useState, useMemo, useCallback, useRef, useEffect } = React;
+    
+    const AnsiHSVColorPicker = () => {
   const [selectedColor, setSelectedColor] = useState({ h: 0, s: 100, v: 100 });
   const [closestAnsi, setClosestAnsi] = useState(null);
   const [isDragging, setIsDragging] = useState(null);
@@ -439,4 +469,9 @@ const AnsiHSVColorPicker = () => {
   );
 };
 
-export default AnsiHSVColorPicker;
+    // Render the component
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(React.createElement(AnsiHSVColorPicker));
+  </script>
+</body>
+</html>
