@@ -4,7 +4,7 @@ An interactive web-based tool for finding the closest ANSI 256 terminal colors t
 
 **[Try the live demo →](https://statico.github.io/ansi-color-picker/)**
 
-[<img width="1168" height="753" alt="CleanShot 2025-08-04 at 13 28 08" src="https://github.com/user-attachments/assets/a2e94285-35f2-4002-928b-eef99f8a8578" />](https://statico.github.io/ansi-color-picker/)
+[<img width="1122" height="809" alt="CleanShot 2025-08-04 at 22 01 00" src="https://github.com/user-attachments/assets/1bfd8c99-63d6-415e-a950-259c04ee1831" />](https://statico.github.io/ansi-color-picker/)
 
 ## Features
 
